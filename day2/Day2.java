@@ -6,10 +6,19 @@ public class Day2 {
         try{
         File grid = new File("day2Input.txt");
         Scanner userData = new Scanner(grid);
+        ArrayList<String> row = new ArrayList<>();
         while(userData.hasNext()){
             String temp = userData.nextLine();
-            System.out.println(temp);
+            row.add(temp);
         }
+        for(String s : row){
+            System.out.println(s);
+        }
+
+        
+
+
+
         userData.close();
     }
     catch(FileNotFoundException e){
