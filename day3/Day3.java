@@ -8,11 +8,20 @@ public class Day3{
             File longString = new File("day3Input.txt");
             Scanner userData = new Scanner(longString);
             ArrayList<String> toFilter = new ArrayList<>();
+            ArrayList<String> filteredInput = new ArrayList<>();
             while(userData.hasNext()){
                 toFilter.add(userData.nextLine());
             }
-            for(String c : toFilter){
-                System.out.println(c);                
+            for(String s : toFilter){
+                String tempString = s;
+                int counter = 1;
+                while(tempString.indexOf("mul(", counter) != -1){
+                System.out.println((tempString.indexOf("mul(", counter)));
+                 counter += tempString.indexOf("mul(", counter);
+                }
+                
+                
+                
             }
             userData.close();
         }
