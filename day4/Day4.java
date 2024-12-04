@@ -11,9 +11,18 @@ public class Day4{
             while(userInput.hasNext()){
                 toSearch.add(userInput.nextLine());
             }
-            for(String s : toSearch){
-                System.out.println(s);
+            for(int i =0; i <toSearch.size(); i++){
+                String row = toSearch.get(i);
+                for(int n = 0; n < row.length() -2; n++){
+                if(row.charAt(n) == 'X' && row.charAt(n+1) == 'M' && row.charAt(n+2) == 'A' && row.charAt(n+3) == 'S'){
+                    xmasCounter ++;
+                }
             }
+            }
+        
+
+
+            System.out.println("Counter "+xmasCounter);
             
     
             userInput.close();
