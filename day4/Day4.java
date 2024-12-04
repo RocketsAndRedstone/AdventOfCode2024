@@ -19,6 +19,21 @@ public class Day4{
                 }
             }
             }
+            for(int i = 0; i < toSearch.size()-3; i++){
+                String row1 = toSearch.get(i);
+                String row2 = toSearch.get(i+1);
+                String row3 = toSearch.get(i+2);
+                String row4 = toSearch.get(i+3);
+                for(int n = 0; n < row1.length()-3; n++){
+                    if(row1.charAt(n) == 'X' && row2.charAt(n+1) == 'M' && row3.charAt(n+2) == 'A' && row4.charAt(n+3) == 'S'){
+                        xmasCounter ++;
+                    }
+                    else if(row1.charAt(n) == 'S' && row2.charAt(n+1) == 'A' && row3.charAt(n+2) == 'M' && row4.charAt(n+3) == 'X'){
+                        xmasCounter ++;
+                    }
+
+                }
+            }
         
 
 
