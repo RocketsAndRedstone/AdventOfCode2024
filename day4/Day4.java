@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-//corect amount: 2517, but I currently get 4123
+//corect amount: 2517, but I currently get 4123, correct awnser obtained via code from https://github.com/nightsplinter/AdventOfCodeJava/blob/main/2024/days/04/src/PartOne.java
 //each sub-scection works correctly at small scale seperate and together
 public class Day4{
     public static void main(String[] args) {
